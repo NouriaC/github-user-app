@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | GitHub user search app</title>
+  </head>
+  <body>
+    <article class="container">
+      <header class="header">
+        <h1 class="name">devfinder</h1>
+        <div class="light-mode">
+          <h3>Light</h3>
+          <img src="./assets/icon-sun.svg" alt="" />
+        </div>
+        <div class="dark-mode">
+          <h3>Dark</h3>
+          <img src="./assets/icon-moon.svg" alt="" />
+        </div>
+      </header>
+      <form action="" class="form">
+        <input
+          type="search"
+          class="search-name"
+          name="search"
+          id="search"
+          placeholder="Search GitHub username..."
+        />
+        <button class="btn-search">Search</button>
+      </form>
+      <div class="result-container">
+        <div class="user-header">
+          <div class="img-container">
+            <img src="" alt="user avatar" />
+          </div>
+          <div class="user-account">
+            <h3>The Octocat(API)</h3>
+            <p class="username">@octocat(API)</p>
+            <p>Joined date from API</p>
+          </div>
+        </div>
+        <div class="user-description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+            nulla maxime cupiditate a dolorem minima molestiae enim harum
+            expedita modi.
+          </p>
+        </div>
+        <div class="user-details">
+          <div class="user-figures">
+            <p>Repos</p>
+            <p class="numbers">8</p>
+          </div>
+          <div class="user-figures">
+            <p>Followers</p>
+            <p class="numbers">3938</p>
+          </div>
+          <div class="user-figures">
+            <p>Following</p>
+            <p class="numbers">9</p>
+          </div>
+        </div>
+        <div class="user-info">
+          <ul class="list-info">
+            <li>
+              <img src="./assets/icon-location.svg" alt="" />
+              <span>city(API)</span>
+            </li>
+            <li>
+              <img src="./assets/icon-website.svg" alt="" />
+              <span>website(API)</span>
+            </li>
+            <li>
+              <img src="./assets/icon-twitter.svg" alt="" />
+              <span>twitter(API)</span>
+            </li>
+            <li>
+              <img src="./assets/icon-company.svg" alt="" />
+              <span>@account(API)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
