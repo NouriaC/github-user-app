@@ -154,6 +154,7 @@ h4 {
 @media screen and (min-width: 1440px) {
   .btn-search {
     left: 42.5rem;
+    padding: 1.2rem 1.77rem;
   }
 }
 
@@ -204,17 +205,12 @@ h4 {
   }
   .result-container {
     padding: 2.5rem;
+    padding-bottom: 0.2rem;
   }
-  .user-description {
-    width: 70%;
-    margin-left: auto;
-  }
-  .user-details {
-    width: 70%;
-    margin-left: auto;
-  }
+  .user-description,
+  .user-details,
   .user-info {
-    width: 70%;
+    width: 78%;
     margin-left: auto;
   }
 }
