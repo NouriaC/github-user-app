@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./styles.css" />
 
-    <title>Frontend Mentor | GitHub user search app</title>
+    <title>GitHub user search app</title>
   </head>
   <body>
     <article class="container">
@@ -38,7 +38,7 @@
         <button class="btn-search">Search</button>
       </form>
       <div class="result-container">
-        <div class="user-header">
+        <div class="user-header" id="user-header">
           <div class="img-container">
             <img src="" alt="user avatar" />
           </div>
@@ -55,7 +55,7 @@
             expedita modi.
           </p>
         </div>
-        <div class="user-details">
+        <div class="user-details" id="user-details">
           <div class="user-figures">
             <p>Repos</p>
             <p class="numbers">8</p>
@@ -69,27 +69,29 @@
             <p class="numbers">9</p>
           </div>
         </div>
-        <div class="user-info">
+        <div class="user-info" id="user-info">
           <ul class="list-info">
             <li>
               <img src="./assets/icon-location.svg" alt="" />
-              <span>city(API)</span>
+              <span></span>
             </li>
             <li>
               <img src="./assets/icon-website.svg" alt="" />
-              <span>website(API)</span>
+              <span></span>
             </li>
             <li>
               <img src="./assets/icon-twitter.svg" alt="" />
-              <span>twitter(API)</span>
+              <span></span>
             </li>
             <li>
               <img src="./assets/icon-company.svg" alt="" />
-              <span>@account(API)</span>
+              <span></span>
             </li>
           </ul>
         </div>
       </div>
     </article>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
