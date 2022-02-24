@@ -41,15 +41,14 @@ const updateCard = (data) => {
             </li>
             <li>
               <img src="./assets/icon-website.svg" alt="" />
-              <span>${data.blog}</span>
+              <span><a href="${data.blog}">${data.blog}</a></span>
             </li>
             <li>
-              <img src="./assets/icon-twitter.svg" alt="" />
-              <span>${
-                data.twitter_username === null
-                  ? "Not available"
-                  : data.twitter_username
-              }</span>
+              <img src="./assets/icon-twitter.svg"/>
+              
+              <span><a href="${data.twitter_username}">${
+    data.twitter_username === null ? "Not available" : data.twitter_username
+  }</a></span>
             </li>
             <li>
               <img src="./assets/icon-company.svg" alt="" />
@@ -67,4 +66,26 @@ fetchGithubProfile();
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   fetchGithubProfile(input.value);
+});
+
+// toggle dark/light mode
+
+const toggleBtn = document.getElementById("toggle-btn");
+const resultContainer = document.querySelector(".result-container");
+const searchName = document.querySelector(".search-name");
+
+toggleBtn.addEventListener("click", () => {
+  toggleBtn.classList.toggle("fa-sun");
+
+  if (toggleBtn.classList.contains("fa-sun")) {
+    document.body.classList.add("light");
+    resultContainer.classList.add("light");
+    searchName.classList.add("light");
+    userDetails.classList.add("light");
+  } else {
+    document.body.classList.remove("light");
+    resultContainer.classList.remove("light");
+    searchName.classList.remove("light");
+    userDetails.classList.remove("light");
+  }
 });
