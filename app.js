@@ -34,24 +34,23 @@ const updateCard = (data) => {
           </div>`;
   userInfo.innerHTML = `<ul class="list-info">
             <li>
-              <img src="./assets/icon-location.svg" alt="" />
+              <i class="fa-solid fa-location-dot fa-fw icon"></i>
               <span>${
                 data.location === null ? "Not available" : data.location
               }</span>
             </li>
             <li>
-              <img src="./assets/icon-website.svg" alt="" />
+              <i class="fa-solid fa-link fa-fw icon"></i>
               <span><a href="${data.blog}">${data.blog}</a></span>
             </li>
             <li>
-              <img src="./assets/icon-twitter.svg"/>
-              
+              <i class="fa-brands fa-twitter fa-fw icon"></i>
               <span><a href="${data.twitter_username}">${
     data.twitter_username === null ? "Not available" : data.twitter_username
   }</a></span>
             </li>
             <li>
-              <img src="./assets/icon-company.svg" alt="" />
+              <i class="fa-solid fa-industry fa-fw icon"></i>
               <span>${
                 data.company === null ? "Not available" : data.company
               }</span>
@@ -82,10 +81,12 @@ toggleBtn.addEventListener("click", () => {
     resultContainer.classList.add("light");
     searchName.classList.add("light");
     userDetails.classList.add("light");
+    toggleBtn.classList.add("light");
   } else {
     document.body.classList.remove("light");
     resultContainer.classList.remove("light");
     searchName.classList.remove("light");
     userDetails.classList.remove("light");
+    toggleBtn.classList.remove("light");
   }
 });
